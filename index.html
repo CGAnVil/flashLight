@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Flashlight.js"></script>
+</head>
+<body>
+<script>
+    let battery = new Battery()
+    battery.energy=10
+
+    let flashLamp = new Flashlight()
+    flashLamp.battery=battery;
+
+    console.log(flashLamp.getBatteryInfo())
+    flashLamp.turnOn()
+    flashLamp.light()
+    flashLamp.turnOff()
+    flashLamp.light()
+</script>
+</body>
+</html>
